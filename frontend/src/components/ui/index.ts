@@ -43,3 +43,39 @@ export type {
   HeadingSize,
   HeadingAlign,
 } from "./Heading";
+
+// ==========================================
+// BADGE
+// ==========================================
+
+export { default as Badge } from "./Badge";
+
+export type {
+  BadgeProps,
+} from "./Badge";
+
+// ==========================================
+// STAT CARD
+// ==========================================
+
+export { default as StatCard } from "./StatCard";
+
+export type {
+  StatCardProps,
+} from "./StatCard";
+
+// FloatingCard
+
+export { default as FloatingCard } from "./FloatingCard";
+
+export type {
+  FloatingCardProps,
+} from "./FloatingCard";
+
+// TrustBar
+
+export { default as TrustBar }from "./TrustBar";
+
+export type {
+  TrustBarProps
+}from "./TrustBar";
