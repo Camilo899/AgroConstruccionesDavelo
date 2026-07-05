@@ -1,48 +1,46 @@
-import { forwardRef } from 'react';
+import { cn } from "@/lib/cn";
 
-import { cn } from '@/utils/cn';
+import type { ButtonProps } from "./button.types";
 
-import type { ButtonProps } from './Button.types';
-import { buttonVariants } from './buttonVariants';
+import {
+  baseClasses,
+  sizeClasses,
+  variantClasses,
+} from "./button.styles";
 
-const Button = forwardRef<HTMLButtonElement, ButtonProps>(
-  (
-    {
-      children,
-      className,
-      variant,
-      size,
-      loading = false,
-      leftIcon,
-      rightIcon,
-      disabled,
-      ...props
-    },
-    ref,
-  ) => {
-    return (
-      <button
-        ref={ref}
-        className={cn(
-          buttonVariants({
-            variant,
-            size,
-          }),
-          className,
-        )}
-        disabled={disabled || loading}
-        {...props}
-      >
-        {leftIcon && !loading && leftIcon}
-
-        {loading ? 'Cargando...' : children}
-
-        {rightIcon && !loading && rightIcon}
-      </button>
-    );
-  },
-);
-
-Button.displayName = 'Button';
-
-export default Button;
+export default function Button({
+  children,
+  variant = "primary",
+  size = "md",
+  fullWidth = false,
+  loading = false,
+  leftIcon,
+  rightIcon,
+  className,
+  disabled,
+  ...props
+}: ButtonProps) {
+  return (
+    <button
+      className={cn(
+        baseClasses,
+        variantClasses[variant],
+        sizeClasses[size],
+        fullWidth && "w-full",
+        className
+      )}
+      disabled={disabled || loading}
+      {...props}
+    >
+      {loading ? (
+        "Cargando..."
+      ) : (
+        <>
+          {leftIcon}
+          {children}
+          {rightIcon}
+        </>
+      )}
+    </button>
+  );
+}
