@@ -1,13 +1,19 @@
-import { Container, Section } from "@/components/ui";
+import {
+  Container,
+  Section,
+} from "@/components/ui";
 
 import AboutContent from "./AboutContent";
 import AboutImage from "./AboutImage";
 
-import { gridClasses } from "./about.styles";
+import {
+  gridClasses,
+  sectionClasses,
+} from "./about.styles";
 
 export default function About() {
   return (
-    <Section>
+    <Section className={sectionClasses}>
       <Container>
         <div className={gridClasses}>
           <AboutImage />

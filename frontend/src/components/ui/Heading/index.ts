@@ -2,6 +2,5 @@ export { default } from "./Heading";
 
 export type {
   HeadingProps,
-  HeadingSize,
-  HeadingAlign,
+  HeadingLevel,
 } from "./heading.types";

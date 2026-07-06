@@ -1,50 +1,42 @@
-import { CheckCircle2 } from "lucide-react";
+import {
+  Badge,
+  Button,
+  CheckList,
+  Heading,
+} from "@/components/ui";
 
 import { ABOUT } from "@/constants/about";
 
 import {
-  itemClasses,
-  listClasses,
-  paragraphClasses,
-  titleClasses,
+  textClasses,
 } from "./about.styles";
 
 export default function AboutContent() {
   return (
     <>
-      <h2 className={titleClasses}>
-        {ABOUT.title}
-      </h2>
+  <Badge>{ABOUT.badge}</Badge>
 
-      <p className={paragraphClasses}>
-        {ABOUT.description}
-      </p>
+  <div className="mt-4">
+    <Heading level={2}>
+      {ABOUT.title}
+    </Heading>
+  </div>
 
-      <div className={listClasses}>
-        <div className={itemClasses}>
-          <CheckCircle2 className="text-secondary" />
-          <span>
-            <strong>Misión:</strong> {ABOUT.mission}
-          </span>
-        </div>
+  <div className="mt-6">
+    <p className={textClasses}>
+      {ABOUT.description}
+    </p>
+  </div>
 
-        <div className={itemClasses}>
-          <CheckCircle2 className="text-secondary" />
-          <span>
-            <strong>Visión:</strong> {ABOUT.vision}
-          </span>
-        </div>
+  <div className="mt-8">
+    <CheckList items={ABOUT.values} />
+  </div>
 
-        {ABOUT.values.map((value) => (
-          <div
-            key={value}
-            className={itemClasses}
-          >
-            <CheckCircle2 className="text-secondary" />
-            <span>{value}</span>
-          </div>
-        ))}
-      </div>
-    </>
+  <div className="mt-10">
+    <Button>
+      Conoce nuestra historia
+    </Button>
+  </div>
+</>
   );
 }

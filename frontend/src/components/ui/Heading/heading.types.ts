@@ -1,22 +1,18 @@
-import type { HTMLAttributes } from "react";
+import type {
+  HTMLAttributes,
+  ReactNode,
+} from "react";
 
-export type HeadingSize =
-  | "sm"
-  | "md"
-  | "lg";
-
-export type HeadingAlign =
-  | "left"
-  | "center"
-  | "right";
+export type HeadingLevel =
+  | 1
+  | 2
+  | 3
+  | 4
+  | 5
+  | 6;
 
 export interface HeadingProps
-  extends HTMLAttributes<HTMLDivElement> {
-  title: string;
-
-  subtitle?: string;
-
-  size?: HeadingSize;
-
-  align?: HeadingAlign;
+  extends HTMLAttributes<HTMLHeadingElement> {
+  children: ReactNode;
+  level?: HeadingLevel;
 }

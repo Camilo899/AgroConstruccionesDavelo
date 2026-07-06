@@ -1,21 +1,24 @@
+export const sectionClasses = `
+py-24
+`;
+
 export const gridClasses = `
 grid
 items-center
-gap-12
+gap-16
 lg:grid-cols-2
 `;
 
 export const titleClasses = `
-mb-6
-text-4xl
+mt-4
 font-heading
+text-4xl
 font-bold
-text-primary
+text-text
 `;
 
-export const paragraphClasses = `
-mb-5
-text-lg
+export const textClasses = `
+mt-6
 leading-8
 text-text-light
 `;
@@ -23,10 +26,4 @@ text-text-light
 export const listClasses = `
 mt-8
 space-y-4
-`;
-
-export const itemClasses = `
-flex
-items-start
-gap-3
 `;

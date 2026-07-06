@@ -1,22 +1,15 @@
 export const ABOUT = {
-  title: "¿Quiénes somos?",
+  badge: "Quiénes Somos",
 
-  description: `
-AgroConstrucciones Davelo S.A.S. desarrolla soluciones integrales en construcción,
-ingeniería y proyectos agropecuarios, ofreciendo servicios para entidades públicas
-y privadas con altos estándares de calidad.
-`,
+  title: "Construimos confianza a través de la ingeniería.",
 
-  mission:
-    "Brindar soluciones eficientes, sostenibles e innovadoras que contribuyan al desarrollo del país.",
-
-  vision:
-    "Ser una empresa referente a nivel nacional por la calidad y responsabilidad de nuestros proyectos.",
+  description:
+    "En AgroConstrucciones Davelo S.A.S. desarrollamos proyectos de infraestructura, construcción y soluciones para el sector agropecuario, ofreciendo servicios integrales con altos estándares de calidad, innovación y cumplimiento. Nuestro compromiso es generar valor sostenible para nuestros clientes y contribuir al desarrollo regional.",
 
   values: [
-    "Compromiso",
-    "Calidad",
-    "Responsabilidad",
-    "Innovación",
+    "Calidad certificada en cada proyecto",
+    "Cumplimiento de cronogramas",
+    "Equipo técnico especializado",
+    "Innovación y mejora continua",
   ],
 };

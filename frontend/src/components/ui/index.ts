@@ -40,10 +40,8 @@ export { default as Heading } from "./Heading";
 
 export type {
   HeadingProps,
-  HeadingSize,
-  HeadingAlign,
+  HeadingLevel,
 } from "./Heading";
-
 // ==========================================
 // BADGE
 // ==========================================
@@ -79,3 +77,13 @@ export { default as TrustBar }from "./TrustBar";
 export type {
   TrustBarProps
 }from "./TrustBar";
+
+// ==========================================
+// CHECK LIST
+// ==========================================
+
+export { default as CheckList } from "./CheckList";
+
+export type {
+  CheckListProps,
+} from "./CheckList";

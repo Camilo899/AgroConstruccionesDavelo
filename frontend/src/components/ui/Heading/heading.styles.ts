@@ -1,33 +1,14 @@
-import type {
-  HeadingAlign,
-  HeadingSize,
-} from "./heading.types";
-
-export const baseClasses = `
-flex
-flex-col
-gap-4
+export const headingBaseClasses = `
+font-heading
+font-bold
+text-text
 `;
 
-export const titleClasses: Record<HeadingSize, string> = {
-  sm: "text-3xl md:text-4xl",
-
-  md: "text-4xl md:text-5xl",
-
-  lg: "text-5xl md:text-6xl",
+export const headingVariants = {
+  1: "text-4xl sm:text-5xl lg:text-6xl",
+  2: "text-3xl sm:text-4xl",
+  3: "text-2xl sm:text-3xl",
+  4: "text-xl sm:text-2xl",
+  5: "text-lg sm:text-xl",
+  6: "text-base sm:text-lg",
 };
-
-export const alignClasses: Record<HeadingAlign, string> = {
-  left: "items-start text-left",
-
-  center: "items-center text-center",
-
-  right: "items-end text-right",
-};
-
-export const subtitleClasses = `
-max-w-3xl
-text-lg
-leading-8
-text-text-light
-`;
