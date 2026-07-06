@@ -1,6 +1,6 @@
 import { cn } from "@/lib/cn";
 
-import type { ButtonProps } from "./button.types";
+import type { ButtonProps } from "./Button.types";
 
 import {
   baseClasses,

@@ -1,7 +1,7 @@
 import type {
   ButtonSize,
   ButtonVariant,
-} from "./button.types";
+} from "./Button.types";
 //Coment
 
 export const variantClasses: Record<ButtonVariant, string> = {
