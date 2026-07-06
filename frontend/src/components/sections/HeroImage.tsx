@@ -14,7 +14,7 @@ export default function HeroImage() {
       />
 
       <FloatingCard
-        title="+20 proyectos"
+        title="+100 proyectos"
         subtitle="Ejecutados con altos estándares de calidad."
         icon={<Award className="text-secondary" size={32} />}
       />

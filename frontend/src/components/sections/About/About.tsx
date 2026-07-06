@@ -13,7 +13,7 @@ import {
 
 export default function About() {
   return (
-    <Section className={sectionClasses}>
+    <Section id="about" className={sectionClasses}>
       <Container>
         <div className={gridClasses}>
           <AboutImage />

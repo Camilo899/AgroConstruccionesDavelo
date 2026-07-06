@@ -15,10 +15,11 @@ export default function Navbar() {
 
           <NavbarMenu />
 
-          <Button size="sm">
-            Contáctanos
-          </Button>
-
+          <a href="#contact">
+            <Button size="sm">
+              Contáctanos
+            </Button>
+          </a>
           <MobileMenu />
         </div>
       </Container>

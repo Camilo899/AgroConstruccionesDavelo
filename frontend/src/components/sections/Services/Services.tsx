@@ -1,4 +1,8 @@
-import { Container, Heading, Section } from "@/components/ui";
+import {
+  Container,
+  Heading,
+  Section,
+} from "@/components/ui";
 
 import { SERVICES } from "@/constants/services";
 
@@ -6,13 +10,17 @@ import ServiceCard from "./ServiceCard";
 
 export default function Services() {
   return (
-    <Section>
+    <Section id="services">
       <Container>
-        <Heading
-          title="Nuestros Servicios"
-          subtitle="Soluciones integrales para entidades públicas y privadas."
-          align="center"
-        />
+        <div className="mx-auto max-w-3xl text-center">
+          <Heading level={2}>
+            Nuestros Servicios
+          </Heading>
+
+          <p className="mt-4 text-lg text-text-light">
+            Soluciones integrales para entidades públicas y privadas.
+          </p>
+        </div>
 
         <div className="mt-16 grid gap-8 md:grid-cols-2 xl:grid-cols-3">
           {SERVICES.map((service) => (

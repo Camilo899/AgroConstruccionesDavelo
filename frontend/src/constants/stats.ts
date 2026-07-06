@@ -1,6 +1,6 @@
 export const HERO_STATS = [
   {
-    value: "+20",
+    value: "+100",
     label: "Proyectos ejecutados",
   },
   {

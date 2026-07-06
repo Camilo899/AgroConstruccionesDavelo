@@ -2,7 +2,7 @@ export default function FooterBrand() {
   return (
     <div className="space-y-4">
       <h3 className="font-heading text-2xl font-bold">
-        AgroConstrucciones Davelo
+        AgroConstrucciones Davelo S.A.S
       </h3>
 
       <p className="max-w-sm text-sm text-white/80">

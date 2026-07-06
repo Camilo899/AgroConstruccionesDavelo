@@ -1,12 +1,10 @@
-import { Link } from "react-router-dom";
-
 export default function NavbarLogo() {
   return (
-    <Link
-      to="/"
+    <a
+      href="#hero"
       className="font-heading text-2xl font-bold text-primary"
     >
       Davelo
-    </Link>
+    </a>
   );
 }

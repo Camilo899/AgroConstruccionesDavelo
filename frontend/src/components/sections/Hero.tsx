@@ -10,7 +10,7 @@ import {
 
 export default function Hero() {
   return (
-    <Section className={sectionClasses}>
+    <Section id="hero" className={sectionClasses}>
       <Container>
         <div className={gridClasses}>
           <HeroContent />

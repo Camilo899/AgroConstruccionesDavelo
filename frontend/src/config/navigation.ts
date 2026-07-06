@@ -1,27 +1,10 @@
-export interface NavigationItem {
-  label: string;
-  href: string;
-}
-
-export const navigation: NavigationItem[] = [
-  {
-    label: "Inicio",
-    href: "/",
-  },
-  {
-    label: "Nosotros",
-    href: "/nosotros",
-  },
-  {
-    label: "Servicios",
-    href: "/servicios",
-  },
-  {
-    label: "Licitaciones",
-    href: "/licitaciones",
-  },
-  {
-    label: "Contacto",
-    href: "/contacto",
-  },
-];
+export const navigation = [
+  { label: "Inicio", href: "#hero" },
+  { label: "Quiénes Somos", href: "#about" },
+  { label: "Servicios", href: "#services" },
+  //{ label: "Sectores", href: "#sectors" },
+  //{ label: "Proyectos", href: "#projects" },
+  //{ label: "Licitaciones", href: "#tenders" },
+  //{ label: "Clientes", href: "#clients" },
+  { label: "Contacto", href: "#contact" },
+] as const;
