@@ -1,6 +1,6 @@
 import {
   Badge,
-  Button,
+  //Button,
   CheckList,
   Heading,
 } from "@/components/ui";
@@ -32,11 +32,11 @@ export default function AboutContent() {
     <CheckList items={ABOUT.values} />
   </div>
 
-  <div className="mt-10">
+  {/*<div className="mt-10">
     <Button>
       Conoce nuestra historia
     </Button>
-  </div>
+  </div>*/}
 </>
   );
 }
